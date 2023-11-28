@@ -1,4 +1,4 @@
-## TASK 3 : Objects with CRUD oprations (Javascript Challenge)
+## TASK 3 : Objects with CRUD operations (Javascript Challenge)
 
 This challenge is part of free internship (Fullstack Engineer) offered by [cyberdude Networks Pvt. Ltd.](https://cyberdudenetworks.com) You can find all the source code and live links here.
 
