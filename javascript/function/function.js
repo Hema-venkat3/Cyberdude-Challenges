@@ -1,22 +1,19 @@
+
 // creating functions
+
 let number = prompt("Enter a number: ");
-let numbers = parseInt(number);
-if(typeof numbers === "String" || numbers === "" ){
-    console.log("Please enter a valid number!");
-}else{
 function oddOrEven(){
-    if(numbers % 2 == 0){
-        console.log(`The entered number ${numbers} is even`);
+    if(number % 2 == 0){
+        console.log(`The entered number ${number} is even`);
     }else{
-        console.log(`The entered number ${numbers} is odd`);
+        console.log(`The entered number ${number} is odd`);
     }
-}
 }
 oddOrEven();
 
 // Immediately invoked function expression (IIFE)
+
 let age = prompt("Enter your age: ");
-if(age === "" || typeof age === 'string')
 (function vote(age){
     if(age >= 18){
         console.log(`Your age is ${age}, so you are allowed to vote`);
@@ -43,6 +40,7 @@ let toDoList = [
         recharge: "water"
     }
 ]
+
 for(let i in toDoList){
     console.log("The todolist is: ", toDoList[i]);
 }
@@ -64,7 +62,41 @@ let array = [10, 25, 85, 36, 40];
 console.log(array.filter(level));
 
 function level(array){
-    return array > 15;
+    return array >= 15;
+}
+console.log(array);
+// addition
+function add(a,b){
+    return a + b;
 }
 
+const result = add(5,3);
+console.log("The addition of two numbers is: ", result);
 
+// subtract
+function subtract(a, b){
+    return a - b;
+}
+
+const sub = subtract(55,20);
+console.log("The subtraction of two numbers is: ", sub);
+
+// multiply
+
+function multiply(a, b){
+    return a*b;
+}
+
+const mul = multiply(3,4);
+console.log("The multiplication of two numbers is: ", mul);
+
+// division
+function divide(a,b){
+    if (b === 0){
+        return "Error: Division by Zero";
+    }
+    return a / b;
+}
+
+const div = divide(15,5);
+console.log("The division of two numbers is: ",div);
